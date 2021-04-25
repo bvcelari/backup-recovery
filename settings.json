@@ -1,0 +1,31 @@
+{
+   "backup":{
+      "mysql":{
+         "user":"root",
+         "pass":"toor",
+         "schema":"employees"
+
+      },
+      "aws":{
+         "access_key":"KeyValue",
+         "secret":"Secret",
+         "bucket":"bucket-test"
+      }
+   },
+   "restore":{
+      "mysql":{
+         "user":"root",
+         "pass":"toor",
+         "schema":"employees2"
+      },
+      "aws":{
+         "access_key":"KeyValue",
+         "secret":"Secret",
+         "bucket":"bucket-test",
+         "fileschema":"employees.20210424235043.sql.gz",
+         "filedata":"employees.20210424235043_data.sql.gz",
+         "md5schema":"md5sum_employees.20210424235043",
+         "md5data":"md5sum_employees.20210424235043_data"
+      }
+   }
+}
